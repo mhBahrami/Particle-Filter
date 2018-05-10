@@ -119,6 +119,16 @@ public:
                                  const std::vector<LandmarkObs> &predicted,
                                  const std::vector<LandmarkObs> &observations);
 
+  /**
+   * MultivariateGaussianProbability To calculate the Multivariate-Gaussian probability
+   * @param x
+   * @param y
+   * @param mu_x
+   * @param mu_y
+   * @param std_x
+   * @param std_y
+   * @return
+   */
   double MultivariateGaussianProbability(const double &x, const double &y, const double &mu_x,
                                          const double &mu_y, const double &std_x, const double &std_y);
   /**
